@@ -144,8 +144,8 @@ const main = async () => {
         args: [parseEther("0.1","gwei"), deadline, v, r, s],
         account: account.address
     });
-
-    console.log('Permit Deposit hash:', hash);
+    const receipt = await walletClient.waitForTransactionReceipt({ hash: hash });
+    console.log('Permit Deposit:', receipt);
 
     // const account_banalece = await publictokenContract.read.balanceOf([account.add]);
     // console.log("查询token余额:", account_banalece);

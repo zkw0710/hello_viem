@@ -31,18 +31,5 @@
     ],
     "outputs": [],
     "stateMutability": "nonpayable"
-  },
-  {
-    "type": "event",
-    "name": "NumberSet",
-    "inputs": [
-      {
-        "name": "newNumber",
-        "type": "uint256",
-        "indexed": true,
-        "internalType": "uint256"
-      }
-    ],
-    "anonymous": false
   }
 ]

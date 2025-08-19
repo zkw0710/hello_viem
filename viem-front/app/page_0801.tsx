@@ -6,7 +6,7 @@ import { foundry } from 'viem/chains';
 import TokenBank_ABI from './contracts/TokenBank.json';
 
 //TokenBank
-const NFTMarket_ADDRESS = "0x5aAdFB43eF8dAF45DD80F4676345b7676f1D70e3";
+const TOKENBANK_ADDRESS = "0x5aAdFB43eF8dAF45DD80F4676345b7676f1D70e3";
 
 export default function Home() {
   const [balance, setBalance] = useState<string>('0');

@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "index": "tsc && node dist/index.js",
+    "bank": "tsc && node dist/bank.js",
+    "counter": "tsc && node dist/counter.js",
+    "bank2": "tsc && node dist/tokenBank.js",
     "weth": "tsc && node dist/weth.js",
     "watchTransfer": "tsc && node dist/watchTransfer.js",
     "watchTransferEth": "tsc && node dist/watchTransferEth.js",
@@ -23,8 +26,12 @@
   "description": "",
   "dependencies": {
     "@ethersproject/wallet": "^5.8.0",
+    "@types/bip39": "^2.4.2",
     "@types/node": "^22.10.1",
+    "bip39": "^3.1.0",
     "dotenv": "^16.5.0",
+    "ethereumjs-util": "^7.1.5",
+    "ethereumjs-wallet": "^1.0.2",
     "shamirs-secret-sharing": "^2.0.0",
     "typescript": "^5.7.2",
     "viem": "^2.30.6"
